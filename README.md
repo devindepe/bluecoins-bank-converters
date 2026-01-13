@@ -28,10 +28,10 @@ The easiest way to convert your files is using the main launcher:
 
 ```bash
 # On macOS / Linux
-python3 main.py
+python3 convert.py
 
 # On Windows
-python main.py
+python convert.py
 ```
 
 The script will automatically:
