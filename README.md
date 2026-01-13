@@ -1,6 +1,8 @@
 # 🏦 Bluecoins Bank Importers
 
-This repository contains a set of Python scripts designed to convert bank statements (in Excel or CSV format) to the standard import format for the **Bluecoins** App.
+**Convert Ibercaja, BBVA & Revolut statements to Bluecoins CSV format**
+
+This repository contains a set of Python scripts designed to convert bank statements (in Excel or CSV format) to the standard import format for the **Bluecoins** App. https://www.bluecoinsapp.com/import-guide/
 
 The goal is to facilitate personal finance tracking without having to manually enter each transaction.
 
