@@ -116,3 +116,8 @@ pandas
 openpyxl
 python-dotenv
 ```
+
+## 🔍 Keywords
+Bluecoins importer, bank statement converter, CSV converter, Ibercaja to Bluecoins, 
+BBVA export, Revolut transactions, personal finance automation, money tracking, 
+expense tracker, bank CSV parser, financial data import
