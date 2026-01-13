@@ -73,9 +73,22 @@ OUTPUT_NAME_IBERCAJA=ibercaja_bluecoins
 
 > **Note:** Do not modify the file content before using the script.
 
-### 2. BBVA
+### 2. BBVA (.xlsx)
 
-In development / Coming soon.
+**How to download the file:**
+
+**Via Mobile App:**
+- Open the BBVA app and select your account
+- Tap the **search icon** (magnifying glass) to filter movements
+- Apply date range and filters needed
+- Tap **"Download Movements"** → Select **Excel**
+
+**Via Web (bbva.es):**
+- Log into bbva.es and go to your account
+- Click the **search/filter icon** to set date range
+- Once movements are displayed, click **"Download Movements"** → Select **Excel**
+
+> **Note:** Do not modify the file content before using the script.
 
 ### 3. Revolut
 
@@ -116,6 +129,17 @@ pandas
 openpyxl
 python-dotenv
 ```
+
+## ❓ FAQ
+
+**Q: Does this work with the free version of Bluecoins?**  
+A: Yes, CSV import is available in all versions.
+
+**Q: Will this create duplicate transactions?**  
+A: The script doesn't detect duplicates. Avoid overlapping date ranges.
+
+**Q: Can I add my bank?**  
+A: Yes! Open an issue with a sample file or submit a PR.
 
 ## 🔍 Keywords
 Bluecoins importer, bank statement converter, CSV converter, Ibercaja to Bluecoins, 
