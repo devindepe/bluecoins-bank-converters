@@ -91,4 +91,5 @@ Don't forget to also create the `requirements.txt` file with this content for th
 ```text
 pandas
 openpyxl
+python-dotenv
 ```
