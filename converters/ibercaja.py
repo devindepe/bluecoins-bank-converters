@@ -5,7 +5,7 @@ try:
     import pandas as pd
     from dotenv import load_dotenv
 except ImportError:
-    print("❌ Error: Faltan dependencias. Por favor, ejecuta: pip install -r requirements.txt")
+    print("❌ Error: Missing dependencies. Please run: pip install -r requirements.txt")
     sys.exit(1)
 
 # === LOAD CONFIGURATION ===
@@ -13,7 +13,7 @@ except ImportError:
 load_dotenv()
 
 # We get the account name from .env. If not found, we use a default.
-ACCOUNT_NAME = os.getenv("ACCOUNT_NAME_IBERCAJA", "Ibercaja Cuenta")
+ACCOUNT_NAME = os.getenv("ACCOUNT_NAME_IBERCAJA", "Ibercaja Account")
 
 # === ARGUMENT CHECK (From Dispatcher) ===
 # main.py passes the file path as the first argument (sys.argv[1])
@@ -28,12 +28,12 @@ input_xlsx = sys.argv[1]
 # Ensure the user provided a valid Excel file
 valid_extensions = ('.xlsx', '.xls')
 if not input_xlsx.lower().endswith(valid_extensions):
-    print(f"❌ Error: El archivo proporcionado no es un Excel válido: {input_xlsx}")
+    print(f"❌ Error: The provided file is not a valid Excel: {input_xlsx}")
     sys.exit(1)
 
 # Validate that the file actually exists
 if not os.path.isfile(input_xlsx):
-    print(f"❌ Error: El archivo no existe en la ruta: {input_xlsx}")
+    print(f"❌ Error: The file does not exist at path: {input_xlsx}")
     sys.exit(1)
 
 # === CONFIGURATION ===
@@ -120,4 +120,4 @@ out["(12) Split"] = ""
 # Bluecoins requires UTF-8 and comma separator
 out.to_csv(OUTPUT_CSV, index=False, encoding="utf-8")
 
-print(f"✅ CSV generado correctamente: {OUTPUT_CSV}")
+print(f"✅ CSV generated correctly: {OUTPUT_CSV}")
